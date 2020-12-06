@@ -1,0 +1,69 @@
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Texturina', serif;
+  background-color:rgb(255,222,151);
+  background-repeat:no-repeat;
+  color: black;
+  background-position: top center;
+}
+header{
+  display: flex;
+  width: 1408px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header a{
+  text-decoration: none;
+  color: black;
+}
+.container{
+  max-width: 928px;
+  margin: 0 auto;
+}
+.opisanie{
+  margin-top: 70px;
+  display:flex;
+  justify-content:center;
+}
+.opisanie h1{
+  margin: 0 0 24px;
+  font-size: 80px;
+  line-height: 96px;
+}
+.bio{
+  margin-top: 100px;
+}
+.bio h2{
+  font-size: 56px;
+  line-height: 80px;
+  text-align: center;
+}
+.bio img{
+  width: 700px;
+  height: 500px;
+}
+.user{
+  text-align: center;
+}
+.bio h3{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.bio p{
+  font-size: 23px;
+}
+ul{
+  list-style-type:none;
+  padding: 0;
+}
+li{
+  padding-left:25px;
+  background-image:url("https://thehashtagsshowtime.files.wordpress.com/2017/05/cropped-chrome_icon___rarity_by_doctorrarity-d6e57ht.png?w=200");
+  background-position:0% 70%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
