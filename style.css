@@ -35,7 +35,8 @@ header a{
   color: black;
 }
 footer{
-  padding: 32px 0 32px;
+  margin-top: 10px;
+  padding:10px 0 10px;
   background-color: white;
 }
 .container{
@@ -53,7 +54,7 @@ footer{
   line-height: 96px;
 }
 .bio{
-  margin-top: 140px;
+  margin-top: 300px;
 }
 .bio h2{
   font-size: 56px;
@@ -127,8 +128,25 @@ dd div{
   background-position:0% 70%;
   background-repeat: no-repeat;
 }
+.rabota{
+  margin-top: 300px;
+  border: 5px ridge yellow;
+  padding: 8px;
+}
 .rabota h2{
+  margin-top: 0;
+  padding-top: 0;
   font-size: 56px;
   line-height: 80px;
   text-align: center;
+}
+.rabota h3{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+}
+a img{
+  border-radius: 7px;
+  margin: 0;
+  padding: 0;
 }
