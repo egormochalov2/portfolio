@@ -11,7 +11,7 @@ body{
 header{
   padding:10px 0 10px;
   display: flex;
-  width: 1408px;
+  max-width: 1408px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -22,7 +22,7 @@ header a{
 .footer1{
   display: flex;
   justify-content: space-between;
-  width: 1408px;
+  max-width: 1408px;
   margin: 0 auto;
 }
 .footer1 div{
