@@ -113,12 +113,17 @@ dd{
   height: 14px;
   border: 1px solid #712073;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 dd div{
-  background-color: #080208;
-  height: 12px;
+  margin-left: 1px;
+  background-color: rgb(233,109,49);
+  height: 13px;
   border-radius: 8px;
-  margin: 1px;
+}
+.c div{
+  background-color: rgb(19,161,209)
 }
 .skillc{
   font-size: 30px;
