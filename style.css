@@ -134,8 +134,9 @@ dd div{
 }
 .rabota{
   margin-top: 300px;
-  border: 5px ridge white;
+  border: 5px solid #EFEDE6;
   padding: 8px;
+  border-radius: 5px;
 }
 .rabota h2{
   margin-top: 0;
