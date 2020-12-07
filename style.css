@@ -67,16 +67,23 @@ footer{
 .user{
 }
 .bio h3{
+  padding: 10px;
+  padding-top: 0px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display:inline-block;
   font-size: 40px;
   line-height: 40px;
   font-weight: 500;
-}
-.bio p{
-  font-size: 23px;
+  border: 2px solid orange;
+  border-radius: 10px;
+  border-style: dashed;
 }
 ul{
   list-style-type:none;
   padding: 0;
+  margin: 0;
 }
 li{
   padding-left:25px;
