@@ -1,4 +1,4 @@
-body{
+.osnova{
   background-image: url("https://i1.wallbox.ru/wallpapers/main/201550/f1ffe993f695a66.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -8,12 +8,26 @@ body{
   background-color:rgb(244,255,255);
   color: black;
 }
+.none{
+  background-image:url("https://kartinkinaden.ru/uploads/posts/2020-07/1593701756_43-p-fon-minimalizm-65.jpg");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-color: rgb(1,0,16);
+  margin: 0;
+  padding: 0;
+  font-family: 'Texturina', serif;
+  color: rgb(205, 92, 92);
+}
 header{
   padding:10px 0 10px;
   display: flex;
   max-width: 1408px;
   margin: 0 auto;
   justify-content: space-between;
+}
+.none header a{
+  color: grey;
 }
 header a{
   text-decoration: none;
@@ -33,10 +47,15 @@ header a{
   text-decoration: none;
   color: black;
 }
-footer{
+.osnova footer{
   margin-top: 10px;
   padding:10px 0 10px;
   background-color: white;
+}
+.none footer{
+  margin-top: 10px;
+  padding:10px 0 10px;
+  background-color: gray;
 }
 .container{
   max-width: 928px;
@@ -68,7 +87,7 @@ footer{
 }
 .user{
 }
-.bio h3{
+.osnova .bio h3{
   padding: 10px;
   padding-top: 0px;
   margin: 0;
@@ -79,6 +98,20 @@ footer{
   line-height: 40px;
   font-weight: 500;
   border: 2px solid orange;
+  border-radius: 10px;
+  border-style: dashed;
+}
+.none .bio h3{
+  padding: 10px;
+  padding-top: 0px;
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 10px;
+  display:inline-block;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  border: 2px solid gray;
   border-radius: 10px;
   border-style: dashed;
 }
@@ -154,4 +187,46 @@ a img{
   border-radius: 7px;
   margin: 0;
   padding: 0;
+}
+.t{
+  display:inline-flex;
+}
+.butto{
+  font-size: 20px;
+}
+.header-phone{
+  margin-left: 20px;
+}
+.none .cop{
+  color: black;
+}
+.last{
+  background-color: red;
+}
+.o{
+  display: flex;
+  justify-content:space-between;
+}
+.a{
+  width: 600px;
+  margin: 0 auto;
+}
+.ok{
+  width: 600px;
+  height: 600px;
+  display: flex;
+}
+.button{
+  display:block;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: white;
+}
+.d{
+  width: 12.72%;
+  height: 12.2%;
 }
