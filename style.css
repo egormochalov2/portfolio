@@ -230,3 +230,47 @@ a img{
   width: 12.72%;
   height: 12.2%;
 }
+
+.h{
+  margin-top: 53px;
+  margin-left: 60px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+.g{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.q{
+  margin-top: 3px;
+  margin-left: 20px;
+  line-height: 14px;
+  font-size: 30px;
+}
+.mn{
+  display:inline-flex;
+}
+.gg{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.qq{
+  margin-top: 3px;
+  margin-left: 20px;
+  line-height: 14px;
+  font-size: 30px;
+}
+.ggg{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.qqq{
+  margin-top: 3px;
+  margin-left: 20px;
+  line-height: 14px;
+  font-size: 30px;
+}
