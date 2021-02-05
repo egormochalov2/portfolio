@@ -6,7 +6,7 @@ lst.onclick=function(){
 }
 for ( let r of button){
   r.onclick=function(){
-    if ( lst.classList.contains('last')){
+    if ( lst.checked){
       r.style.backgroundColor='white';
       r.style.borderColor='black';
   }

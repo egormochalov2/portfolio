@@ -1,12 +1,49 @@
+html{
+  scroll-behavior: smooth;
+}
 .osnova{
   background-image: url("https://i1.wallbox.ru/wallpapers/main/201550/f1ffe993f695a66.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   margin: 0;
   padding: 0;
-  font-family: 'Texturina', serif;
   background-color:rgb(244,255,255);
   color: black;
+}
+.butto{
+  font-size: 20px;
+  display: block;
+}
+.t ul{
+  display:flex;
+}
+.but{
+display: flex;
+}
+.navig{
+  margin-right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.navig ul{
+  display: flex;
+}
+.navig a{
+  margin: 0 10px;
+  padding: 5px;
+  border: 2px dashed lightgray;
+  color: lightgray;
+  border-radius: 5px;
+}
+a{
+  display:block;
+}
+nav{
+  padding: 10px;
+  display: flex;
+  max-width: 1408px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 .none{
   background-image:url("https://kartinkinaden.ru/uploads/posts/2020-07/1593701756_43-p-fon-minimalizm-65.jpg");
@@ -19,13 +56,6 @@
   font-family: 'Texturina', serif;
   color: rgb(205, 92, 92);
 }
-header{
-  padding:10px 0 10px;
-  display: flex;
-  max-width: 1408px;
-  margin: 0 auto;
-  justify-content: space-between;
-}
 .none header a{
   color: grey;
 }
@@ -35,17 +65,21 @@ header a{
 }
 .footer1{
   display: flex;
-  justify-content: space-between;
   max-width: 1408px;
   margin: 0 auto;
+  justify-content: space-between;
 }
-.footer1 div{
-  display: inline;
+.footer ul{
+  display: flex;
 }
 .footer a{
   margin-left: 20px;
   text-decoration: none;
   color: black;
+}
+.cop{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .osnova footer{
   margin-top: 10px;
@@ -120,7 +154,7 @@ ul{
   padding: 0;
   margin: 0;
 }
-li{
+.bio li{
   padding-left:25px;
   background-image:url("https://thehashtagsshowtime.files.wordpress.com/2017/05/cropped-chrome_icon___rarity_by_doctorrarity-d6e57ht.png?w=200");
   background-position:0% 70%;
@@ -187,12 +221,6 @@ a img{
   border-radius: 7px;
   margin: 0;
   padding: 0;
-}
-.t{
-  display:inline-flex;
-}
-.butto{
-  font-size: 20px;
 }
 .header-phone{
   margin-left: 20px;
@@ -273,4 +301,17 @@ a img{
   margin-left: 20px;
   line-height: 14px;
   font-size: 30px;
+}
+fieldset{
+  border-radius: 5px;
+}
+.ul li{
+  border-radius: 5px;
+  background-color: lightsteelblue;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+.dis{
+  display: none;
 }

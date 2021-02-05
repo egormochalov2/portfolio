@@ -9,12 +9,28 @@
   </head>
   <body class="osnova">
     <header>
-        <span class="t"><a href="mailto:enot_neopoznanniy@gmail.com" class="header-emai">&#9993 egor18mochalov@yandex.ru</a>
-              <a href="tel:+79159956141" class="header-phone">&#9742 +7 915 995 61 41</a>
-        </span>
+      <nav>
+        <div class="t">
+          <ul>
+          <li><a href="mailto:enot_neopoznanniy@gmail.com" >&#9993 egor18mochalov@yandex.ru</a></li>
+              <li><a href="tel:+79159956141" class="header-phone">&#9742 +7 915 995 61 41</a></li>
+            </ul>
+        </div>
+        <div class="but">
+          <div class='navig'>
+          <ul >
+            <li><a href="#div">Обо мне</a></li>
+            <li><a href="#rabota">Мои работы</a></li>
+            <li><a href="#comment">Оставить комментарий</a></li>
+          </ul>
+        </div>
         <button type="button" name="button" class='butto'>Изменить стиль</button>
+      </div>
+      </nav>
     </header>
-    <main>
+    <main >
+      <div>
+      <input type="image" name="bu" class='ty dis' style="position:fixed; width:60px; margin-left:95%; margin-top:35%;" src="https://cintera.ru/assets/cintera/Icons/SVG/ArrowTop.svg">
     <div class="opisanie container">
       <section>
       <h1>Портфолио</h1>
@@ -24,8 +40,10 @@
     <div class="bio container">
       <h2>Давайте познакомимся</h2>
         <img src="https://sun9-7.userapi.com/impf/lHtbN6VrKAOBqXwEuxm9oBmDfTQpU8xHnFpDOQ/B87jVNd0VQ0.jpg?size=1201x1039&quality=96&proxy=1&sign=a3e4b884f5db3c81379e09658770807a" alt="">
-      <h3>Пара слов о себе</h3>
-      <ul>
+        <div id="div">
+        </div>
+      <h3 id="bio">Пара слов о себе</h3>
+      <ul >
         <li>Учусь в городе Ярославле,на 2 курсе по наврпавлению <q>ПИЭ</q></li>
       </ul>
       <h3>Чем могу быть полезен</h3>
@@ -35,11 +53,13 @@
       <h3>Мои навыки</h3>
       <dl>
       <dt class="skillh">HTML</dt>
-      <dd class=""><div style="width:60%"></div></dd>
+      <dd class="hh"><div style="width:60%"></div></dd>
       <dt class="skillc">CSS</dt>
       <dd class="c"><div style="width:40%"></div></dd>
     </dl>
     </div>
+    <div id="rabota" style="position:relative; top:250px;">
+      </div>
     <div class="rabota container">
       <h2>Мои работы</h2>
       <div class="mn">
@@ -86,7 +106,7 @@
             <option value="mediumpurple">Фиолетовый</option>
             <option value="purple">Пурпурный</option>
           </select>
-          <button type="button" name="button" class="sd">Ластик</button>
+          <label><input type="checkbox" class="sd" > Ластик</label>
           </div>
     <div class="ok">
       <span class="d">
@@ -172,6 +192,22 @@
     </div>
     </div>
     </div>
+    <section style="margin:0 auto; max-width:928px;">
+      <h3 id="comment">Комментарии :</h3>
+      <ol class="ul" style=" padding:25px; border:2px solid lightgray" >
+        <li>dfdf</li>
+      </ol>
+    </section>
+    <section style="margin:0 auto; max-width:928px; text-align:left">
+      <form  action="index.html" method="post" class="sub" style="margin-top:20px;">
+        <fieldset style="display:flex">
+          <legend>Ваш комментарий</legend>
+        <textarea  cols="80" class="text"></textarea>
+        <input type="submit" value="Отправить" style="height:60%; margin-top:auto;margin-left:10px;">
+        </fieldset>
+      </form>
+    </section>
+  </div>
     </main>
     <footer>
       <div class="footer1">
@@ -179,13 +215,17 @@
           &#169 2020
         </div>
         <div class="footer">
-        <a href="mailto:enot_neopoznanniy@gmail.com" class="header-email">&#9993 egor18mochalov@yandex.ru</a>
-        <a href="tel:+79159956141" class="header-phone">&#9742 +7 915 995 61 41</a>
+          <ul>
+            <a href="mailto:enot_neopoznanniy@gmail.com" class="header-email">&#9993 egor18mochalov@yandex.ru</a>
+            <a href="tel:+79159956141" class="header-phone">&#9742 +7 915 995 61 41</a>
+          </ul>
         </div>
       </div>
     </footer>
     <script src="fg.js"></script>
     <script src="gh.js"></script>
     <script src="t.js"></script>
+    <script src="com.js"></script>
+    <script src="ffff.js"></script>
   </body>
 </html>
