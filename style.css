@@ -236,11 +236,11 @@ a img{
   justify-content:space-between;
 }
 .a{
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .ok{
-  width: 600px;
+  max-width: 600px;
   height: 600px;
   display: flex;
 }
