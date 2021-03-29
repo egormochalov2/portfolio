@@ -8,11 +8,9 @@ for ( let r of button){
   r.onclick=function(){
     if ( lst.checked){
       r.style.backgroundColor='white';
-      r.style.borderColor='black';
   }
   else {
     r.style.backgroundColor=chose.value;
-    r.style.borderColor=chose.value;
   }
   }
 }
