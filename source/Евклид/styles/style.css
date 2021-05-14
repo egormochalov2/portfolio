@@ -497,12 +497,12 @@ button{
   transition: background-color 0.3s ease-in;
 }
 .section-questions__list-item:hover{
-  cursor: pointer;
-  color:#FF9900;
-  border-color: #FF9900;
+  cursor: pointer !important;
+  color:#FF9900 !important;
+  border-color: #FF9900 !important;
 }
 .section-questions__list-item:hover::before{
-  background-color: #D2D2D2;
+  background-color: #D2D2D2 !important;
 }
 .section-questions-accordion-content{
   padding: 0 !important;
