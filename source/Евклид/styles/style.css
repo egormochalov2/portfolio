@@ -34,7 +34,7 @@
   box-sizing: border-box;
 }
 html{
-    font-family:'Montserrat';
+    font-family:'Montserrat' !important;
 }
 ul{
   margin: 0;
@@ -447,10 +447,16 @@ button{
   padding-bottom: 100px;
 }
 .section-questions__list{
-  margin-top: 42px;
+  margin-top: 42px !important;
   border-collapse: collapse;
 }
+.ui-icon{
+  display: none !important;
+}
 .section-questions__list-item{
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
   position: relative !important;
   z-index: 10 !important;
   margin-top:-1px !important;
@@ -467,13 +473,14 @@ button{
   transition-property: border-color,color !important;
   transition-duration: 0.3s !important;
   transition-timing-function:ease-in-out !important;
+  margin: 0 !important;
 }
 .section-questions__list-item:first-child{
-  border-top: 1px solid #CACACA;
-  margin-top: 0;
+  border-top: 1px solid #CACACA !important;
+  margin-top: 0 !important;
 }
 .section-questions__list-item:last-child{
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .section-questions__list-item::before{
   content: "";
@@ -498,13 +505,15 @@ button{
   background-color: #D2D2D2;
 }
 .section-questions-accordion-content{
-  max-width: 56.6%;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-  color: #333333;
-  padding-bottom: 40px;
+  padding: 0 !important;
+  border:  none !important;
+  max-width: 56.6% !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 32px !important;
+  color: #333333 !important;
+  padding-bottom: 40px !important;
 }
 .hjk{
   border-bottom: none;
@@ -797,10 +806,10 @@ button{
     padding-bottom: 53px;
   }
   .section-questions__list{
-    margin-top: 37px;
+    margin-top: 37px !important;
   }
   .section-questions__list__item-content{
-    max-width: 82%;
+    max-width: 82% !important;
   }
   .section-footer__form{
     margin-left: 0;
@@ -820,7 +829,7 @@ button{
     font-size: 17px;
   }
   .section-questions__list-item:nth-of-type(2n){
-    padding: 30px 0px;
+    padding: 30px 0px !important;
   }
 }
 @media(max-width:1014px){
@@ -909,28 +918,28 @@ button{
     max-width: 96%;
   }
   .section-questions__list__item-content{
-    max-width: 87%;
+    max-width: 87% !important;
   }
   .section-questions__list-item::before{
-    top: 30%;
+    top: 30% !important;
   }
   .section-questions__list-item:nth-child(3),.section-questions__list-item:nth-child(4),.section-questions__list-item:nth-child(5),.section-questions__list-item:nth-child(5){
-    padding: 30px 0px;
+    padding: 30px 0px !important;
   }
   .section-questions__list-item:nth-child(3) .section-questions__list__item-content{
-    max-width: 71%;
+    max-width: 71% !important;
   }
   .section-questions__list-item:nth-child(4) .section-questions__list__item-content{
-    max-width: 83%;
+    max-width: 83% !important;
   }
   .section-questions__list-item:nth-child(5) .section-questions__list__item-content{
-    max-width: 78%;
+    max-width: 78% !important;
   }
   .section-footer__content{
     flex-direction: column-reverse;
   }
   .section-questions{
-    padding-bottom: 57px;
+    padding-bottom: 57px !important;
   }
   .section-footer-nav__list{
     display: none;
@@ -958,7 +967,7 @@ button{
     max-width: 33%;
   }
   .section-questions-accordion-content{
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 @media(max-width:624px){
@@ -1163,27 +1172,27 @@ button{
     padding-bottom: 39px;
   }
   .section-questions__list{
-    margin-top: 12px;
+    margin-top: 12px !important;
   }
   .section-questions__list{
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .section-questions__list-item{
-    padding: 30px 0;
+    padding: 30px 0 !important;
   }
   .section-questions__list__item-content{
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
   }
   .section-questions__list__item-content{
-    max-width: 78%;
+    max-width: 78% !important;
   }
   .section-questions__list-item::before{
-    width: 30px;
-    height: 30px;
-    top:38%;
-    background-size: 16px 16px;
+    width: 30px !important;
+    height: 30px !important;
+    top:38% !important;
+    background-size: 16px 16px !important;
   }
   .section-footer__content{
     padding: 0;
