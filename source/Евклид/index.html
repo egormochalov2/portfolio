@@ -20,7 +20,18 @@
 
     <script>
       $( function() {
-      $( "#accordion" ).accordion({header: "li",heightStyle: "content"});
+      $( "#accordion" ).accordion({header: "li",heightStyle: "content",
+        classes:{
+          "ui-accordion":"",
+          "ui-accordion-header":"",
+          "ui-accordion-header-active":"",
+          "ui-accordion-header-collapsed":"",
+          "ui-accordion-icons":"",
+          "ui-accordion-header-icon":"",
+          "ui-accordion-content":"",
+          "ui-accordion-content-active":""
+        }
+      });
       } );
   </script>
   </head>
