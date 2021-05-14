@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.section-questions__list-item').forEach(function(el){
+    el.addEventListener('click',function(event){
+      console.log(1);
+      document.querySelectorAll('.section-questions__list-item').forEach(function(elem){
+        elem.classList.remove('hjk');
+      })
+      event.currentTarget.classList.add('hjk');
+    })
+  })
+});
