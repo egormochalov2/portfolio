@@ -77,6 +77,9 @@ display: flex;
 .navig ul{
   display: flex;
 }
+ul{
+  list-style-type: none;
+}
 .navig a{
   padding: 5px;
   color: lightgray;
@@ -263,28 +266,51 @@ header a{
   border-radius: 10px;
   border-style: dashed;
 }
-ul{list-style-type:none;
+ul{
 padding: 0;
 margin: 0;}
 .bio ul:nth-of-type(1){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style-type:none;
   padding: 0;
   margin: 0;
   text-align: center;
   margin-bottom: 150px;
+}
+.bio ul:nth-of-type(1) li:not(:last-child){
+  margin-bottom: 10px;
 }
 .bio ul:nth-of-type(2){
-  list-style-type:none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
-  margin: 0;
-  text-align: center;
+  margin: 0 auto;
   margin-bottom: 150px;
 }
+.bio ul:nth-of-type(2) li{
+  position: relative;
+  padding-left: 26px;
+}
+.bio ul:nth-of-type(2) li:not(:last-child){
+  margin-bottom: 10px;
+}
+.bio ul:nth-of-type(2) li::before{
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  background-image: url("539px-Kanizsa_triangle.svg.png");
+  background-position: center;
+}
 .bio li{
-  display: inline-block;
   position: relative;
   font-size: 20px;
-  color:;
 }
 .bio ul:nth-of-type(1) li::after{
   content:'';
@@ -308,6 +334,15 @@ margin: 0;}
   background-image: url("icon-html.svg");
   background-position:0% 70%;
   background-repeat: no-repeat;
+}
+.skilljs{
+  margin-top: 30px;
+  font-size: 30px;
+  padding-left: 35px;
+  background-image: url("icon-js.png");
+  background-size: 22px 24px;
+  background-position:0% 70%;
+  background-repeat: no-repeat; 
 }
 dl{
   margin: 0;
@@ -385,15 +420,18 @@ height:400px;
 margin: auto;
 }
 .o{
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   justify-content:space-between;
   margin-bottom: 2px;
 }
 .a{
-  max-width: 600px;
   margin: 0 auto;
 }
 .ok{
+  max-width: 600px;
+  margin: 0 auto;
   height: 600px;
 }
 table{
