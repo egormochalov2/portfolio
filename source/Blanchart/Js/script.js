@@ -209,61 +209,82 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 
   /*Events Swiper*/
-  const swiper1 = new Swiper('.section-events__swiper', {
-    // Optional parameters
-    loop: false,
-    pagination: {
-      el: '.section-events__swiper-pagination',
-      clickable:true,
-    },
-    spaceBetween: '3.125%',
-  });
+  const min30 =window.matchMedia('(max-width: 668px)');
+  if (min30.matches){
+    const swiper1 = new Swiper('.section-events__swiper', {
+      // Optional parameters
+      loop: false,
+      pagination: {
+        el: '.section-events__swiper-pagination',
+        clickable:true,
+      },
+      spaceBetween: '3.125%',
+    });
+  }
 
   /*Gallery Choices*/
-  const min =window.matchMedia('(max-width: 500px)');
-    if(min.matches){
-      document.querySelector(".section-gallery__select option:nth-of-type(1)").innerHTML="Автор";
-      document.querySelector(".section-gallery__select option:nth-of-type(2)").innerHTML="Направление";
-      document.querySelector(".section-gallery__select option:nth-of-type(3)").innerHTML="Техника";
-      const choices =new Choices(document.querySelector(".section-gallery__select"),{
-        searchEnabled: false,
-        itemSelectText: "",
-        resetScrollPosition:false,
-        shouldSortItems:false,
-        shouldSort:false,
-      });
-    }
-    else{
-      const choices =new Choices(document.querySelector(".section-gallery__select"),{
-        searchEnabled: false,
-        itemSelectText: "",
-        resetScrollPosition:false,
-        shouldSortItems:false,
-        shouldSort:false,
-      });
-    }
+  const choices1 =new Choices(document.querySelector(".section-gallery__select"),{
+    searchEnabled: false,
+    itemSelectText: "",
+    resetScrollPosition:false,
+    shouldSortItems:false,
+    shouldSort:false,
+  });
+  const mediaQuery = window.matchMedia('(max-width: 576px)');
+function handleTabletChange(e) {
+  // Проверить, что media query будет true
+  if (e.matches) {
+    choices1.clearChoices();
+    choices1.setChoices([{value: '', label: 'Автор', placeholder: true}]).setChoiceByValue('');
+    choices1.setChoices(
+      [
+        { value: 'Направление'},
+        { value: 'Техника'},
+      ],
+    );
+  }
+  else{
+    choices1.clearChoices();
+    choices1.setChoices([{value: '', label: 'Живопись', placeholder: true}]).setChoiceByValue('');
+    choices1.setChoices(
+      [
+        { value: 'Рисунок'},
+        { value: 'Скульптура'},
+      ],
+    );
+  }
+}
+
+// Слушать события
+mediaQuery.addListener(handleTabletChange);
+
+// Начальная проверка
+handleTabletChange(mediaQuery);
 
   /*Gallery Model*/
-  const min3 =window.matchMedia('(max-width: 500px)');
-    if(min3.matches){
+  const gmin1 =window.matchMedia('(min-width: 1366px)');
+  const gmin2 =window.matchMedia('(min-width: 992px)');
+  const gmin3 =window.matchMedia('(min-width: 500px)');
   document.querySelectorAll(".section-gallery__item").forEach(function(el){
       el.addEventListener('click',function(event){
         document.querySelector(".hide").style.display='block';
-        document.querySelector(".hide__img").setAttribute("src",el.querySelector("img").getAttribute("src"));
-        console.log(srt);
+        if(gmin1.matches){
+          console.log(2);
+          document.querySelector(".hide__img").setAttribute("src",el.querySelector("picture source").srcset);
+        }
+        else if(gmin2.matches){
+          console.log(3);
+          document.querySelector(".hide__img").setAttribute("src",el.querySelectorAll("picture source")[1].srcset);
+
+        }
+        else if(gmin3.matches){
+          document.querySelector(".hide__img").setAttribute("src",el.querySelectorAll("picture source")[2].srcset);
+        }
+        else{
+          document.querySelector(".hide__img").setAttribute("src",el.querySelector("img").getAttribute("src"));
+        }
       });
   })
-}
-else{
-  document.querySelectorAll(".section-gallery__item").forEach(function(el){
-    el.addEventListener('click',function(event){
-      document.querySelector(".hide").style.display='block';
-      var srt =window.getComputedStyle(el).backgroundImage.slice(4,-1).replace(/"/g, "");
-      document.querySelector(".hide__img").setAttribute("src",srt.toString());
-      console.log(srt);
-    });
-})
-}
   document.querySelector(".hide__exit").addEventListener('click',function(){
     document.querySelector(".hide").style.display='none';
   })
@@ -271,31 +292,11 @@ else{
     document.querySelector(".hide").style.display='none';
   })
 
-  /*Gallery Swiper 2*/
-  const swipe = new Swiper('.section-gallery__slider2 .section-gallery__slider-container', {
-    // Optional parameters
-    loop: false,
-    spaceBetween: '4.3%',
-    // If we need pagination
-    pagination: {
-      el: '.section-gallery__slider2 .swiper-pagination',
-      type:'fraction',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.section-gallery__slider2 .swiper-button-next',
-      prevEl: '.section-gallery__slider2 .swiper-button-prev',
-      type:'custom',
-    },
-    speed:2000
-  });
 
   /*Gallery Swiper 1*/
   const swipe2 = new Swiper('.section-gallery__slider .section-gallery__slider-container', {
     // Optional parameters
     loop: false,
-    spaceBetween: '4.3%',
     // If we need pagination
     pagination: {
       el: '.section-gallery__slider .swiper-pagination',
@@ -308,27 +309,49 @@ else{
       prevEl: '.section-gallery__slider .swiper-button-prev',
       type:'custom',
     },
-    speed:2000
-  });
-
-  /*Gallery Swiper 3*/
-  const swipe3 = new Swiper('.section-gallery__slider3 .section-gallery__slider-container', {
-    // Optional parameters
-    loop: false,
-    spaceBetween: '4.3%',
-    // If we need pagination
-    pagination: {
-      el: '.section-gallery__slider3 .swiper-pagination',
-      type:'fraction',
+    speed:2000,
+    a11y: {
+      prevSlideMessage: 'Previous ',
+      nextSlideMessage: 'Next slide',
     },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.section-gallery__slider3 .swiper-button-next',
-      prevEl: '.section-gallery__slider3 .swiper-button-prev',
-      type:'custom',
-    },
-    speed:2000
+    breakpoints: {
+      0: {
+        spaceBetween: 20,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        grid: {
+          fill:'row',
+          rows: 1,
+        },
+	    },
+      576: {
+        spaceBetween: 34,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          fill:'row',
+          rows: 2,
+        },
+	    },
+      1200: {
+        spaceBetween: 30,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        grid: {
+          fill:'row',
+          rows: 2,
+        },
+	    },
+      1600: {
+        spaceBetween: 49,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        grid: {
+          fill:'row',
+          rows: 2,
+        },
+	    }
+	  },
   });
 
   /*Link*/
@@ -356,7 +379,7 @@ $(".section-catalog__content").on("click","a", function (event) {
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1500);
 });
-const min2 =window.matchMedia('(max-width: 500px)');
+const min2 =window.matchMedia('(max-width: 576px)');
   if(min2.matches){
     $(".section-catalog__acordion-list").on("click","li", function (event) {
       event.preventDefault();
@@ -593,7 +616,7 @@ const min2 =window.matchMedia('(max-width: 500px)');
     document.querySelector(".section-public .choices").classList.toggle("is-focus");
   });
   /*Public Swiper*/
-  if (window.matchMedia("(min-width: 500px)").matches) {
+  if (window.matchMedia("(min-width: 576px)").matches) {
     /* the viewport is at least 400 pixels wide */
     const swipe9 = new Swiper('.section-public__slider .section-public__slider-container', {
       // Optional parameters
