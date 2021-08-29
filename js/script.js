@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 
   /*Events Swiper*/
-  const min30 =window.matchMedia('(max-width: 668px)');
+  const min30 =window.matchMedia('(max-width: 767px)');
   if (min30.matches){
     const swiper1 = new Swiper('.section-events__swiper', {
       // Optional parameters
