@@ -585,11 +585,7 @@ const min2 =window.matchMedia('(max-width: 576px)');
         slidesPerView: 'auto',
         slidesPerGroup: 1,
 	    },
-      501: {
-        slidesPerView: 'auto',
-        slidesPerGroup: 2,
-	    },
-	    769: {
+	    767: {
         slidesPerView: 'auto',
         slidesPerGroup: 2,
 	    },
