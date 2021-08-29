@@ -3296,6 +3296,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media(max-width:767px){
+  .br320{
+    display: block !important;
+  }
   .section-events__swiper{
     margin-bottom: 48px;
   }
