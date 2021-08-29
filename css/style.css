@@ -88,6 +88,7 @@ picture image{
   height: 29px;
   width: 29px;
   right: 0;
+  top: 0;
   transform: translateX(120%);
   transition: transform .3s ease-in;
 }
@@ -258,7 +259,7 @@ picture image{
   align-items: flex-end;
 }
 .search-menu__search form{
-  display: flex;
+  display: flex !important;
   align-items: flex-end;
 }
 .search-menu__search > svg{
