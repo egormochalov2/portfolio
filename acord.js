@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".section-questions__list-item").forEach(function(e){e.addEventListener("click",function(e){console.log(1),document.querySelectorAll(".section-questions__list-item").forEach(function(e){e.classList.remove("hjk")}),e.currentTarget.classList.add("hjk")})})});
