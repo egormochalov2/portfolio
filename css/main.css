@@ -111,7 +111,7 @@ a:hover {
 }
 
 .arrow-right {
-  bottom: -1%;
+  bottom: 0;
   top: 0;
   right: -8%;
 }
