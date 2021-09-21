@@ -81,18 +81,23 @@ a:hover {
 }
 
 .arrow-left {
-  top: 0;
-  left: 0;
+  top: -2%;
+  left: -10%;
   bottom: 0;
 }
 @media (max-width: 1599.98px) {
   .arrow-left {
-    left: -5.7%;
+    left: -16.7%;
   }
 }
 @media (max-width: 1049.98px) {
   .arrow-left {
-    width: 310px;
+    left: -24%;
+  }
+}
+@media (max-width: 835.98px) {
+  .arrow-left {
+    left: -36%;
   }
 }
 @media (max-width: 639.98px) {
@@ -106,18 +111,23 @@ a:hover {
 }
 
 .arrow-right {
-  bottom: 0;
+  bottom: -1%;
   top: 0;
-  right: 0;
+  right: -8%;
 }
 @media (max-width: 1599.98px) {
   .arrow-right {
-    right: -5.7%;
+    right: -18%;
   }
 }
 @media (max-width: 1049.98px) {
   .arrow-right {
-    width: 310px;
+    right: -26%;
+  }
+}
+@media (max-width: 835.98px) {
+  .arrow-right {
+    right: -38%;
   }
 }
 @media (max-width: 639.98px) {

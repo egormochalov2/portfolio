@@ -8,6 +8,8 @@ window.addEventListener('DOMContentLoaded', function () {
         // Magic happens here
         function parallax(e) {
             const t = (window.innerWidth - e.pageX*3)
+            elem1.style.willChange = 'transform'; 
+            elem2.style.willChange = 'transform'; 
             elem1.style.transform = 'translateX('+-t/100+'px'+')';
             elem2.style.transform = 'translateX('+-t/100+'px'+')';
         }
