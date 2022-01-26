@@ -5,6 +5,10 @@
     <title>Портфолио:Мочалов Егор </title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://p7.hiclipart.com/preview/118/239/709/clip-art-computer-icons-animated-film-gif-desktop-wallpaper-anime-movies-folder-icon.jpg" type="icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body class="osnova">
     <header>
@@ -20,7 +24,6 @@
           <ul >
             <li><a href="#div">Обо мне</a></li>
             <li><a href="#rabota">Мои работы</a></li>
-            <li><a href="#comment">Оставить комментарий</a></li>
           </ul>
         </div>
         <button type="button" name="button" class='butto' style="">Изменить стиль</button>
@@ -76,166 +79,55 @@
       <dd class="c"><div style="width:40%;background-color: yellow;"></div></dd>
     </dl>
     </div>
-    <div id="rabota" style="position:relative; top:250px;">
-      </div>
-    <div class="rabota container" style="border:none;background-color:white;box-shadow: 0 0px 5px 3px lightgray;margin-top:170px;">
-      <h2>Мои работы</h2>
-    <div style="border-bottom:3px dashed orange;overflow: hidden;">
-        <h3 style="text-align:center">Пиксель арт</h3>
-        <!--<div class="h">
-          <img src="2.png"  class='ggg' alt="">
-          <span class="qqq">0</span>
-        </div>-->
-      <div class="a">
-      <div class="o" style="align-items:flex-end; margin-bottom:2px;padding:0;">
-        <input type="color" class="chosen-color" name="" value="">
-        <!--<select class="chosen-color" name="chosen-color">
-            <option value="black">Чёрный</option>
-            <option value="white">Белый</option>
-            <option value="grey">Серый</option>
-            <option value="pink">Розовый</option>
-            <option value="red">Красный</option>
-            <option value="darkorange">Оранжевый</option>
-            <option value="saddlebrown">Коричневый</option>
-            <option value="yellow">Золотой</option>
-            <option value="greenyellow">Салатовый</option>
-            <option value="forestgreen">Зелёный</option>
-            <option value="aquamarine">Аквамарин</option>
-            <option value="lightskyblue">Голубой</option>
-            <option value="lightsteelblue">Серо-голубой</option>
-            <option value="darkblue">Тёмно-синий</option>
-            <option value="indigo">Индиго</option>
-            <option value="mediumpurple">Фиолетовый</option>
-            <option value="purple">Пурпурный</option>
-          </select>-->
-          <label style="margin-bottom:-3px;padding:0;"><input type="checkbox" class="sd" > Ластик</label>
-          </div>
-          <div class="ok">
-    <table>
-      <tr class="d">
-        <td class="button"></td>
-        <td class="button"></td>
-        <td class="button"></td>
-        <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-      <tr class="d" >
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-        <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-      <tr class="d">
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-      <tr class="d">
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-      <tr class="d">
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-      <tr class="d">
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-      <tr class="d">
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-      <tr class="d">
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-      <td class="button"></td>
-    </tr>
-    </table>
+    <div id="rabota">
+
+    </div>
+    <section>
+      <div class="rabota container" style="border:none;background-color:white;box-shadow: 0 0px 5px 3px lightgray;margin-top:170px;">
+        <h2>Мои работы</h2>
+      <div style="border-bottom:3px dashed orange;overflow: hidden;">
+    <div>
+      <h3 style="text-align:center">Евклид</h3>
+      <!--<div class="h">
+        <img src="2.png"  class='gg' alt="">
+        <span class="qq">0</span>
+      </div>-->
+    <a href="source/14_accessibility/index.html"><img src="21.PNG" width="928" height="536" alt="Евклид"></a>
   </div>
-  <div >
-    <h3 style="text-align:center">Евклид</h3>
+  <div>
+    <h3 style="text-align:center">Blanchart</h3>
     <!--<div class="h">
       <img src="2.png"  class='gg' alt="">
       <span class="qq">0</span>
     </div>-->
-  <a href="source/14_accessibility/index.html"><img src="21.PNG" width="928" height="536" alt="Евклид"></a>
-</div>
-<div >
-  <h3 style="text-align:center">Blanchart</h3>
-  <!--<div class="h">
-    <img src="2.png"  class='gg' alt="">
-    <span class="qq">0</span>
-  </div>-->
-<a href="source/Blanchart/index.html"><img src="Blanchart.PNG" width="928" height="536" alt="Евклид"></a>
-</div>
+  <a href="source/Blanchart/index.html"><img src="Blanchart.PNG" width="928" height="536" alt="Евклид"></a>
   </div>
+  <div>
+    <h3 style="text-align:center">Avrora</h3>
+    <!--<div class="h">
+      <img src="2.png"  class='gg' alt="">
+      <span class="qq">0</span>
+    </div>-->
+  <a href="source/avrora/index.html"><img src="avrora.PNG" width="928" height="536" alt="Евклид"></a>
   </div>
+  <div>
+    <h3 style="text-align:center">Modzho</h3>
+    <!--<div class="h">
+      <img src="2.png"  class='gg' alt="">
+      <span class="qq">0</span>
+    </div>-->
+  <a href="source/Modzho/index.html"><img src="modzho.PNG" width="928" height="536" alt="Евклид"></a>
   </div>
-  </div>
-    <div>
-    <section style="margin:0 auto; max-width:928px;">
-      <h3 id="comment" style="text-align:center;margin-top:60px;">Комментарии</h3>
-      <ol class="ul" style=" padding:25px; " >
-        <li>dfdf</li>
-      </ol>
+    </div>
+    </div>
+    </div>
     </section>
-    <section style="margin:0 auto; max-width:928px; text-align:left">
-      <form  action="index.html" method="post" class="sub" style="margin-top:20px;">
-        <fieldset style="display:flex; align-items:center; min-width:100px; ">
-          <legend>Ваш комментарий</legend>
-        <input type="text" class="text" style="box-sizing:border-box; flex-grow:1; min-width:50px; padding:10px;">
-        <input type="submit" value="Отправить" style="margin-left:10px; flex-shrink:0;">
-        </fieldset>
-      </form>
-    </section>
-  </div>
+    </div>
     </main>
     <footer>
       <div class="footer1">
         <div class="cop">
-          &#169 2020
+          &#169 2022
         </div>
         <div class="footer">
           <ul>
